@@ -13,12 +13,12 @@ app.get('/',(req,res)=>{
     })
 })
 
-const connectDB =async () => {
-    const conn = await mongoose.connect(process.env.MONGO_URI);
+const connectDB = async()=>{
     try{
+        const conn = await mongoose .connect(process.env.MONGO_URI)
         if(conn)
         {
-            console.log("mongodb connected successfully");
+            console.log("mongodb connected successfully")
         }
     }catch(error){
         console.log(error)
