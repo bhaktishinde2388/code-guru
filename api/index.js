@@ -25,9 +25,9 @@ const connectDB = async()=>{
     }
 }
 
-const PORT = process.env.PORT || 4000;
+const PORT=process.env.PORT || 4000;
 
-app.listen(PORT,()=>{
+app.listen(4000,()=>{
     console.log(`sever run on  ${PORT}`);
     connectDB();
 })
